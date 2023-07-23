@@ -15,35 +15,28 @@ require("lazy").setup({
     {
 	    'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	    dependencies = { 'nvim-lua/plenary.nvim' }
-    },
-    {
-	    'numToStr/Comment.nvim',
-	    lazy = false,
-    },
-    {
-        'kylechui/nvim-surround',
-	    lazy = false,
-    },
-    {
-	    'rose-pine/neovim',
-	    name = 'rose-pine',
-	    lazy = false,
-	    priority = 1000, -- make sure to load this before all the other start plugins
-    },
-    {
-	    'nvim-treesitter/nvim-treesitter',
-	    lazy = false, -- make sure we load this during startup
-	    run = ':TSUpdate'
-    },
-    {
-	    'mbbill/undotree',
-	    lazy = false,
-    },
-    {
-	    'tpope/vim-fugitive',
-	    lazy = false,
-    },
-    {
+    }, {
+	    'numToStr/Comment.nvim', lazy = false,
+    }, {
+        "kylechui/nvim-surround",
+        version = "*",
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    }, {
+	    'rose-pine/neovim', name = 'rose-pine', lazy = false, priority = 1000,
+    }, {
+        'catppuccin/nvim', name = 'catppuccin', priority = 1000, lazy = false
+    }, {
+	    'nvim-treesitter/nvim-treesitter', lazy = false, run = ':TSUpdate'
+    }, {
+	    'mbbill/undotree', lazy = false,
+    }, {
+	    'tpope/vim-fugitive', lazy = false,
+    }, {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
         dependencies = {
