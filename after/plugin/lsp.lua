@@ -42,7 +42,7 @@ lsp.setup()
 
 -- You need to setup `cmp` after lsp-zero
 local cmp = require('cmp')
-local cmp_action = require('lsp-zero').cmp_action()
+-- local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
   mapping = {
@@ -53,5 +53,7 @@ cmp.setup({
     -- Navigate between snippet items
     ["<C-k>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
     ["<C-j>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
+    ["<Tab>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
+    ["<S-Tab>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
   }
 })

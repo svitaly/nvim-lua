@@ -17,6 +17,13 @@ require("lazy").setup({
 	    dependencies = { 'nvim-lua/plenary.nvim' }
     }, {
 	    'numToStr/Comment.nvim', lazy = false,
+    -- }, {
+    --     "folke/which-key.nvim",
+    --     event = "VeryLazy",
+    --     init = function()
+    --         vim.o.timeout = true
+    --         vim.o.timeoutlen = 300
+    --     end,
     }, {
         "kylechui/nvim-surround",
         version = "*",
@@ -27,11 +34,7 @@ require("lazy").setup({
             })
         end
     }, {
-	    'rose-pine/neovim', name = 'rose-pine', lazy = false, priority = 1000,
-    }, {
 	    'Mofiqul/dracula.nvim', name = 'dracula', lazy = false, priority = 1000,
-    }, {
-        'catppuccin/nvim', name = 'catppuccin', priority = 1000, lazy = false
     }, {
 	    'nvim-treesitter/nvim-treesitter', lazy = false, run = ':TSUpdate'
     }, {
