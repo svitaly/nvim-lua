@@ -3,6 +3,8 @@
   "LuaSnip": { "branch": "master", "commit": "0b4950a237ce441a6a3a947d501622453f6860ea" },
   "catppuccin": { "branch": "main", "commit": "6425df128d46f2db2cccf9aa7a66ca2823c1d153" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "44b16d11215dce86f253ce0c30949813c0a90765" },
+  "dracula": { "branch": "main", "commit": "9fe831e685a76e1a1898a694623b33247c4d036c" },
+  "gitsigns.nvim": { "branch": "main", "commit": "31178496552584e84fa9e74e087dec1f6c347f5d" },
   "lazy.nvim": { "branch": "main", "commit": "3ad55ae678876516156cca2f361c51f7952a924b" },
   "lsp-zero.nvim": { "branch": "v2.x", "commit": "c70bd7362f728b568b4884bc82a8208d14ace537" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "e86a4c84ff35240639643ffed56ee1c4d55f538e" },

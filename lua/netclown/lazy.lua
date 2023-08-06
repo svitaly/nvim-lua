@@ -29,6 +29,8 @@ require("lazy").setup({
     }, {
 	    'rose-pine/neovim', name = 'rose-pine', lazy = false, priority = 1000,
     }, {
+	    'Mofiqul/dracula.nvim', name = 'dracula', lazy = false, priority = 1000,
+    }, {
         'catppuccin/nvim', name = 'catppuccin', priority = 1000, lazy = false
     }, {
 	    'nvim-treesitter/nvim-treesitter', lazy = false, run = ':TSUpdate'
@@ -36,6 +38,8 @@ require("lazy").setup({
 	    'mbbill/undotree', lazy = false,
     }, {
 	    'tpope/vim-fugitive', lazy = false,
+    }, {
+	    'lewis6991/gitsigns.nvim', lazy = false,
     }, {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v2.x',
