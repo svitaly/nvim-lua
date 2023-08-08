@@ -30,6 +30,8 @@ require("lazy").setup({
             })
         end
     }, {
+	    'windwp/nvim-autopairs', event = 'InsertEnter', opts = {}
+    }, {
 	    'Mofiqul/dracula.nvim', name = 'dracula', lazy = false, priority = 1000,
     }, {
 	    'nvim-treesitter/nvim-treesitter', lazy = false, run = ':TSUpdate'

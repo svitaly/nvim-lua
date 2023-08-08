@@ -27,4 +27,10 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+vim.opt.listchars = 'eol:'
+-- vim.opt.list = true
 
+vim.opt.laststatus = 3
+-- implement borders for splits:
+vim.cmd[[highlight WinSeparator guibg=None]]
+-- :highligth WinSeparator guibg=None
