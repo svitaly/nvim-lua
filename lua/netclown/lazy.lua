@@ -16,14 +16,10 @@ require("lazy").setup({
 	    'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	    dependencies = { 'nvim-lua/plenary.nvim' }
     }, {
+	     "nvim-telescope/telescope-file-browser.nvim",
+         dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    }, {
 	    'numToStr/Comment.nvim', lazy = false,
-    -- }, {
-    --     "folke/which-key.nvim",
-    --     event = "VeryLazy",
-    --     init = function()
-    --         vim.o.timeout = true
-    --         vim.o.timeoutlen = 300
-    --     end,
     }, {
         "kylechui/nvim-surround",
         version = "*",

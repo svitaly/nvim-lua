@@ -1,6 +1,16 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+-- File browser
+-- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<space>fb",
+--   ":Telescope file_browser<CR>",
+--   { noremap = true }
+-- )
+-- open file_browser with the path of the current buffer
+vim.keymap.set("n", "<leader>e", ":Telescope file_browser path=%:p:h select_buffer=true<CR><Esc>")
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -71,3 +81,4 @@ vim.keymap.set("n", "<C-Up>", "<cmd>resize -2<CR>")
 vim.keymap.set("n", "<C-Down>", "<cmd>resize +2<CR>")
 vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<CR>")
 vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<CR>")
+
