@@ -34,6 +34,8 @@ require("lazy").setup({
     }, {
 	    'Mofiqul/dracula.nvim', name = 'dracula', lazy = false, priority = 1000,
     }, {
+      "nvim-lualine/lualine.nvim", event = "VimEnter",
+    }, {
 	    'nvim-treesitter/nvim-treesitter', lazy = false, run = ':TSUpdate'
     }, {
 	    'mbbill/undotree', lazy = false,
