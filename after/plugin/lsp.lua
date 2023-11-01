@@ -21,7 +21,16 @@ lsp.set_preferences({
     }
 })
 
-
+-- trying to tame pyright:
+require('lspconfig').pyright.setup({
+  python = {
+    analysis = {
+      autoSearchPaths = true,
+      useLibraryCodeForTypes = true,
+      diagnosticMode = 'openFilesOnly',
+    },
+  },
+})
 
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
