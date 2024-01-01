@@ -42,6 +42,8 @@ require("lazy").setup({
     }, {
 	    'tpope/vim-fugitive', lazy = false,
     }, {
+	    'sindrets/diffview.nvim', lazy = false,
+    }, {
 	    'lewis6991/gitsigns.nvim', lazy = false,
     }, {
         'VonHeikemen/lsp-zero.nvim',
