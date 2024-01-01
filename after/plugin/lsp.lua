@@ -13,12 +13,7 @@ require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.set_preferences({
     suggest_lsp_servers = false,
-    sign_icons = {
-        error = 'E',
-        warn = 'W',
-        hint = 'H',
-        info = 'I'
-    }
+    sign_icons = { error = 'E', warn = 'W', hint = 'H', info = 'I' }
 })
 
 -- trying to tame pyright:
